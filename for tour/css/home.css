@@ -1,0 +1,115 @@
+.home {
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(236, 236, 236, 0.638);
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+
+
+.left-infrm {
+    width: 100%;
+    height: 100%;
+}
+
+.left-infrm img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(68%);
+    transition: .5s;
+}
+
+.home:hover img {
+    filter: brightness(48%);
+
+}
+
+.right-infrm {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-infrm h1 {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.buttons-home {
+    display: flex;
+    gap: 15px;
+}
+
+.buttons-home button {
+    width: 170px;
+    height: 35px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0, 119, 224, 0.641);
+    transition: .5s;
+    border-radius: 20px;
+
+}
+
+
+
+.buttons-home button:hover {
+    background-color: rgb(0, 119, 224);
+
+}
+
+
+
+@media only screen and (max-width: 835px) {
+
+    .home {
+        height: auto;
+    }
+
+    .right-infrm h1 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 428px) {
+
+    .home {
+        height: auto;
+        height: 60vh;
+    }
+
+    .left-infrm img {
+        height: 80vh;
+    }
+
+    .right-infrm h1 {
+        font-size: 20px;
+    }
+}
+
+
+.inf-button-a {
+    width: 200px;
+    height: 45px;
+    border-radius: 30px;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.396);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    /* border: 1px solid black; */
+    scroll-behavior: smooth;
+}
+
+
+.mainbox {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 95%;
+    height: 100%;
+
+}
+
+.logo img {
+    width: 150px;
+    object-fit: cover;
+}
+
+
+
+footer {
+    width: 100%;
+    height: 300px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.top-footer {
+    width: 90%;
+    height: 100%;
+    display: flex;
+}
+
+
+.left-top-footer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+}
+
+.top-footer img {
+    height: 70%;
+
+}
+
+
+
+.top-footer p {
+    width: 60%;
+    color: rgba(128, 128, 128, 0.426);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.social-media {
+    display: flex;
+    width: 32.5%;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media i {
+    font-size: 30px;
+    color: #1796a6;
+}
+
+.map {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+
+}
+
+.map-item {
+    height: 83%;
+    width: 60%;
+}
+
+@media only screen and (max-width: 835px) {
+    .left-top-footer {
+        width: 30%;
+    }
+
+    .social-media {
+        width: 100%;
+    }
+
+    .map {
+        width: 70%;
+    }
+
+    .map-item {
+        height: 83%;
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 428px) {
+    .top-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .left-top-footer {
+        width: 100%;
+    }
+
+    .map {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+    }
+
+    .map-item {
+        width: 100%;
+        height: 200px;
+    }
+
+
+}

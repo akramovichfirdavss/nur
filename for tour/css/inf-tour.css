@@ -1,0 +1,128 @@
+.inf-tour-box {
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 50% 50%;
+    height: auto;
+    gap: 50px;
+    margin: 50px 0px;
+
+}
+
+.left-inf-tour {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left-inf-tour img {
+    width: 100%;
+    border-radius: 50px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.right-inf-tour {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 90%;
+}
+
+
+.right-inf-tour h1 {
+    font-weight: 500;
+}
+
+.tour-city {
+    color: rgb(86, 86, 86);
+}
+
+.information-tour {
+    font-size: 14px;
+    color: rgb(86, 86, 86);
+
+}
+
+.rating i {
+    color: rgb(255, 255, 0);
+    font-size: 20px;
+}
+
+.button-inf {
+    display: flex;
+    gap: 20px;
+}
+
+.inf-button-a {
+    text-decoration: none;
+    width: 230px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 25px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tour-each {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.firs-day,
+.second-day,
+.third-day,
+.four-day,
+.five-day,
+.six-day {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.back-arrow {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.back-arrow a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+
+
+@media only screen and (max-width: 835px) {
+    .button-inf a {
+        font-size: 13px;
+    }
+
+}
+
+@media only screen and (max-width: 428px) {
+    .inf-tour-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-inf-tour img {
+        display: none;
+    }
+
+    .left-inf-tour img:nth-child(2) {
+        display: block;
+    }
+
+}
